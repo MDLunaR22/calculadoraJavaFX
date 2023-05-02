@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="364.0" stylesheets="@fxmlcalculadoraview.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.in5bv.marvinluna.controller.FXMLCalculadoraController">
+   <children>
+      <GridPane layoutX="21.0" layoutY="160.0" prefHeight="320.0" prefWidth="335.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnUno" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="1" GridPane.rowIndex="4" />
+            <Button id="boton-masmenos" fx:id="btnInverso" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" stylesheets="@fxmlcalculadoraview.css" text="±" GridPane.rowIndex="5" />
+            <Button id="boton-del" fx:id="btnDel" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicLimpiar" styleClass="boton-del" stylesheets="@fxmlcalculadoraview.css" text="DEL" GridPane.columnIndex="2" />
+            <Button fx:id="btnDos" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btnCero" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button id="boton-multiplicacion" fx:id="btnMultiplicacion" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" styleClass="botones-operadores" stylesheets="@fxmlcalculadoraview.css" text="×" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="btnOcho" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnNueve" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button id="boton-raiz" fx:id="btnRaiz" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" styleClass="botones-extras" stylesheets="@fxmlcalculadoraview.css" text="√x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button id="boton-division" fx:id="btnDivision" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" styleClass="botones-operadores" stylesheets="@fxmlcalculadoraview.css" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button id="boton-porcentaje" fx:id="btnPorcentaje" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" styleClass="botones-operadores" stylesheets="@fxmlcalculadoraview.css" text="\%" GridPane.columnIndex="3" />
+            <Button id="boton-suma" fx:id="btnSuma" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" styleClass="botones-operadores" stylesheets="@fxmlcalculadoraview.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="btnTres" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="btnSeis" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button id="boton-resta" fx:id="btnResta" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" styleClass="botones-operadores" stylesheets="@fxmlcalculadoraview.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button id="boton-reciproco" fx:id="btnReciproco" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" styleClass="botones-extras" stylesheets="@fxmlcalculadoraview.css" text="1/x" GridPane.rowIndex="1" />
+            <Button id="boton-potencia" fx:id="btnPotencia" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicOperadores" styleClass="botones-extras" stylesheets="@fxmlcalculadoraview.css" text="x²" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnSiete" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="7" GridPane.rowIndex="2" />
+            <Button fx:id="btnCinco" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btnCuatro" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicNumeros" styleClass="botones-numeros" stylesheets="@fxmlcalculadoraview.css" text="4" GridPane.rowIndex="3" />
+            <Button id="boton-igual" fx:id="btnIgual" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicIgual" stylesheets="@fxmlcalculadoraview.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button id="boton-punto" fx:id="btnPunto" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#clicPunto" stylesheets="@fxmlcalculadoraview.css" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button id="boton-ac" fx:id="btnAc" mnemonicParsing="false" onAction="#clicLimpiar" prefHeight="29.0" prefWidth="162.0" stylesheets="@fxmlcalculadoraview.css" text="AC" GridPane.columnSpan="2">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label id="pantalla" fx:id="lblPantalla" alignment="CENTER_RIGHT" layoutX="39.0" layoutY="48.0" prefHeight="84.0" prefWidth="286.0" stylesheets="@fxmlcalculadoraview.css" text="0">
+         <padding>
+            <Insets right="10.0" />
+         </padding></Label>
+      <Label id="pantalla2" fx:id="lblPantalla2" alignment="CENTER_RIGHT" layoutX="49.0" layoutY="48.0" prefHeight="24.0" prefWidth="267.0" stylesheets="@fxmlcalculadoraview.css" />
+   </children>
+</AnchorPane>

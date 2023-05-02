@@ -1,0 +1,123 @@
+
+
+#boton-igual{
+    -fx-background-color: #55dd77;
+    -fx-background-radius: 75 50 75 50;
+}
+
+#boton-igual:hover{
+    -fx-background-color: #22dd44;
+    -fx-font-size: 25px; 
+}
+
+.botones-operadores{
+    
+    -fx-background-radius: 10;
+    -fx-background-color: #2299ff;
+    -fx-text-fill: #ffffff;
+}
+
+.botones-operadores:hover{
+    -fx-background-color: #0000ff;
+    -fx-font-size: 25px;
+}
+
+#boton-ac{
+    
+    -fx-background-color: #dd0000;
+    -fx-text-fill: white;
+    -fx-background-radius: 0 50 50 0
+}
+
+#boton-ac:hover{
+    -fx-background-color: #ff0000;
+    -fx-font-size: 20px;
+}
+
+#boton-del{
+    
+    -fx-background-radius: 10;
+    -fx-background-color: #cccccc;
+    -fx-text-fill: red;
+}
+
+#boton-del:hover{
+    -fx-text-fill: #cc0000;
+    -fx-font-size: 20px;
+    -fx-background-color: #ffcccc;
+}
+
+.botones-numeros{
+    -fx-background-radius: 10;
+    -fx-background-color: #cccccc;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.botones-numeros:hover {
+    -fx-font-size: 25px;
+    -fx-background-color: #222222;
+    -fx-text-fill: white;
+    -fx-font-family: "Times New Roman";
+}
+
+.botones-extras{
+    
+    -fx-background-radius: 10;
+    -fx-backGround-color: #cccccc;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.botones-extras:hover{
+    -fx-font-size: 25px;
+    -fx-background-color: #222222;
+    -fx-text-fill: white;
+}
+
+#boton-masmenos{
+    
+    -fx-background-radius: 10;
+    -fx-backGround-color: #cccccc;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+#boton-masmenos:hover{
+    -fx-font-size: 25px;
+    -fx-background-color: #222222;
+    -fx-text-fill: white;
+}
+
+#boton-punto{
+    
+    -fx-background-radius: 10;
+    -fx-backGround-color: #cccccc;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+#boton-punto:hover{
+    -fx-font-size: 25px;
+    -fx-background-color: #222222;
+    -fx-text-fill: white;
+}
+
+#pantalla{
+    -fx-font-size: 25px;
+    -fx-background-color: #999999;
+    -fx-background-radius: 30 30 30 30;
+}
+
+#AnchorPane{
+    -fx-background-color: #444444;
+    
+}
+
+#pantalla2{
+    -fx-font-family: "Times New Roman";
+    -fx-background-radius: 30 30 30 30;
+    -fx-font-size: 14px;
+}
+
